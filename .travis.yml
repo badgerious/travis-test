@@ -1,6 +1,8 @@
 language: bash
+env:
+    - myspecialvar="hi there"
 script:
     - true
 after_script:
-    - echo hi
+    - echo hi && env
 
